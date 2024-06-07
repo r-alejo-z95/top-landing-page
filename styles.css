@@ -1,0 +1,57 @@
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+header,
+.title,
+footer {
+    background-color: #1f2937;
+}
+
+header,
+h1 {
+    color: #f9faf8;
+}
+
+.title p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.title img {
+    width: 450px;
+    height: auto;
+}
+
+.call-to-action,
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    color: #f9faf8;
+}
