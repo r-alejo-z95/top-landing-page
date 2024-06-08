@@ -1,3 +1,13 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 h1 {
     font-size: 48px;
     font-weight: bolder;
@@ -16,18 +26,104 @@ footer {
 }
 
 header,
+.title,
+.content,
+footer {
+    display: flex;
+}
+
+header,
 h1 {
     color: #f9faf8;
 }
 
-.title p {
+header {
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 20px 200px 20px 200px;
+}
+
+header ul{ 
+    display: flex;
+    gap: 10px;
+}
+
+header .header-links {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.header-links a:hover{
+    color: #3882f6;
+}
+
+.title {
+    text-align: left;
+    padding: 80px 200px 80px 200px;
+    justify-content: space-between;
+}
+
+.title-text {
+    margin: auto 35px auto 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.title-text p {
     font-size: 18px;
     color: #e5e7eb;
+    margin-top: 0;
 }
 
 .title img {
-    width: 450px;
+    width: 350px;
     height: auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content {
+    background-color: #f9faf8;
+    flex-direction: column;
+
+}
+
+.content-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 200px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.image img {
+    width: 130px;
+    height: auto;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
 }
 
 .call-to-action,
@@ -39,6 +135,10 @@ button {
 .quote {
     background-color: #e5e7eb;
     color: #1f2937;
+    margin-top: 80px;
+    padding: 80px 250px 80px 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote blockquote {
@@ -47,11 +147,51 @@ button {
     font-weight: lighter;
 }
 
-.quote p {
+.quote .author {
     font-size: 24px;
     font-weight: bold;
+    text-align: right;
+    margin-right: 100px;
+    }
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 200px ;
+    border-radius: 5px;
+    padding: 40px 20px;
 }
+
+.call-to-action-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action-text h3 {
+    margin-bottom: 0;
+}
+
+.call-to-action-text p {
+    margin-top: auto;
+    font-weight: lighter;
+}
+
+button {
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.call-to-action button {
+    border: 2px solid #f9faf8;
+}
+
 
 footer {
     color: #f9faf8;
+    justify-content: center;
+    padding: 40px 200px;
 }

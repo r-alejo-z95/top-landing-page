@@ -5,23 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Landing Page - The Odin Project - RZ</title>
 </head>
 
 <body>
-    <Header>Header Logo
-        <ul class="header-links">
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-        </ul>
-    </Header>
+    <div class="header">    
+        <Header>Header Logo
+            <ul class="header-links">
+                <li><a href="#">header link one</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </Header>
+    </div>
 
     <div class="title">
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
-            contrast.</p>
-        <button type="button" id="button-1">Sign Up</button>
+        <div class="title-text">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
+                contrast.</p>
+            <button type="button" id="button-1">Sign Up</button>
+        </div>
         <img src="https://images.unsplash.com/photo-1715276611519-da6f49966fa0?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="A view of a city at night from the top of a building">
     </div>
@@ -30,31 +37,33 @@
         <h2>Some random information</h2>
         <div class="content-images">
             <figure class="image">
-                <img src="https://images.unsplash.com/photo-1625862849881-64c93500d0a5?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px" height="300px" alt="Aerial view of city during night time">
+                <img src="https://images.unsplash.com/photo-1625862849881-64c93500d0a5?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aerial view of city during night time">
                 <figcaption>Aerial view of city during night time</figcaption>
             </figure>
             <figure class="image">
-                <img src="https://images.unsplash.com/photo-1580138574510-6385666e979c?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px" height="300px" alt="A crowded city street filled with lots of people">
+                <img src="https://images.unsplash.com/photo-1580138574510-6385666e979c?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A crowded city street filled with lots of people">
                 <figcaption>A crowded city street filled with lots of people</figcaption>
             </figure>
             <figure class="image">
-                <img src="https://images.unsplash.com/photo-1671377544348-229d06e8c0f8?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px" height="300px" alt="An aerial view of a city street with buildings">
+                <img src="https://images.unsplash.com/photo-1671377544348-229d06e8c0f8?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="An aerial view of a city street with buildings">
                 <figcaption>An aerial view of a city street with buildings</figcaption>
             </figure>
             <figure class="image">
-                <img src="https://images.unsplash.com/photo-1656943207900-1d6bada9dffd?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px" height="300px" alt="A view of a city at night">
+                <img src="https://images.unsplash.com/photo-1656943207900-1d6bada9dffd?q=80&w=2380&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A view of a city at night">
                 <figcaption>A view of a city at night</figcaption>
             </figure>
         </div>
         <div class="quote">
             <blockquote>
-                Each city has its own unique character and charm, shaped by its history, culture, and the people who call it home. From the bustling streets filled with life and energy to the quiet corners that hold moments of serenity, cities are like living organisms, constantly evolving and reflecting the diversity of human experience. They are the stage for our stories, the backdrop for our memories, and the canvas on which we paint our dreams.
+                From the bustling streets filled with life and energy to the quiet corners that hold moments of serenity, cities are like living organisms, constantly evolving and reflecting the diversity of human experience.
             </blockquote>
-            <p>- Anonymous</p>
+            <p class="author">- Anonymous</p>
         </div>
         <div class="call-to-action">
-            <h3>Call to action! It's time!</h3>
-            <p>Sign up for our newsletter by clicking the button</p>
+            <div class="call-to-action-text">
+                <h3>Call to action! It's time!</h3>
+                <p>Sign up for our newsletter by clicking the button</p>
+            </div>
             <button type="button" id="button-2">Sign up</button>
         </div>
 
